@@ -1,0 +1,400 @@
+/* src/pages/Home.css */
+
+/* ===== CSS Variables — Official Brand Palette ===== */
+:root {
+  --color-black: #000000;
+  --color-cotton-candy: #F495B0;
+  --color-dark-magenta: #920A82;
+  --color-ghost-white: #FAFBFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  background-color: var(--color-ghost-white);
+  color: var(--color-black);
+  overflow-x: hidden;
+}
+
+/* ===== Shared Section Heading ===== */
+.home-section-heading {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.2rem;
+  color: var(--color-dark-magenta);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.4px;
+}
+
+/* =========================================
+   1. HERO SECTION
+   ========================================= */
+.home-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 4rem;
+  min-height: 80vh;
+}
+
+.home-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-hero-heading {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  color: var(--color-black);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+.home-hero-text {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.75);
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+}
+
+.home-hero-buttons {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.home-hero-btn-primary {
+  background-color: var(--color-dark-magenta);
+  color: var(--color-ghost-white);
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  border-radius: 2px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--color-dark-magenta);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.home-hero-btn-primary:hover {
+  background-color: var(--color-cotton-candy);
+  border-color: var(--color-cotton-candy);
+  color: var(--color-black);
+}
+
+.home-hero-btn-secondary {
+  background-color: transparent;
+  color: var(--color-black);
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  border-radius: 2px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--color-black);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.home-hero-btn-secondary:hover {
+  background-color: var(--color-black);
+  color: var(--color-ghost-white);
+}
+
+.home-hero-image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.home-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+  transition: transform 0.5s ease;
+}
+
+.home-hero-image-wrapper:hover .home-hero-image {
+  transform: scale(1.03);
+}
+
+/* =========================================
+   2. BRAND INTRODUCTION
+   ========================================= */
+.home-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.home-intro-text {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* =========================================
+   3. SERVICES PREVIEW
+   ========================================= */
+.home-services {
+  padding: 5rem 3rem;
+  background-color: var(--color-ghost-white);
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-services-link-wrapper {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.home-services-link {
+  display: inline-block;
+  color: var(--color-dark-magenta);
+  text-decoration: none;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid var(--color-dark-magenta);
+  padding-bottom: 3px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.home-services-link:hover {
+  color: var(--color-cotton-candy);
+  border-color: var(--color-cotton-candy);
+}
+
+/* =========================================
+   4. WHY THE GLOW AFFAIRS
+   ========================================= */
+.home-why {
+  padding: 5rem 3rem;
+  background-color: var(--color-black);
+}
+
+.home-why .home-section-heading {
+  color: var(--color-ghost-white);
+}
+
+.home-why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-why-item {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(250, 251, 255, 0.15);
+  border-radius: 4px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-why-item:hover {
+  border-color: var(--color-cotton-candy);
+  transform: translateY(-4px);
+}
+
+.home-why-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.15rem;
+  color: var(--color-cotton-candy);
+  margin-bottom: 0.8rem;
+}
+
+.home-why-text {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(250, 251, 255, 0.8);
+}
+
+/* =========================================
+   5. TESTIMONIALS
+   ========================================= */
+.home-testimonials {
+  padding: 5rem 3rem;
+  background-color: var(--color-ghost-white);
+}
+
+.home-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-testimonial-card {
+  background-color: #FAFBFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 2.2rem 1.8rem;
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.home-testimonial-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.home-testimonial-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-black);
+  margin-bottom: 1.2rem;
+}
+
+.home-testimonial-author {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.4px;
+  color: var(--color-dark-magenta);
+}
+
+/* =========================================
+   6. FINAL CALL TO ACTION
+   ========================================= */
+.home-final-cta {
+  text-align: center;
+  padding: 5.5rem 2rem;
+  background-color: var(--color-dark-magenta);
+}
+
+.home-final-cta-heading {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.2rem;
+  color: var(--color-ghost-white);
+  margin-bottom: 1.2rem;
+}
+
+.home-final-cta-text {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(250, 251, 255, 0.9);
+  max-width: 520px;
+  margin: 0 auto 2.2rem auto;
+}
+
+.home-final-cta-btn {
+  display: inline-block;
+  background-color: var(--color-cotton-candy);
+  color: var(--color-black);
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--color-cotton-candy);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.home-final-cta-btn:hover {
+  background-color: transparent;
+  color: var(--color-ghost-white);
+  border-color: var(--color-ghost-white);
+}
+
+/* =========================================
+   RESPONSIVE — TABLET
+   ========================================= */
+@media (max-width: 1024px) {
+  .home-hero {
+    padding: 4rem 2.5rem;
+  }
+
+  .home-hero-heading {
+    font-size: 2.6rem;
+  }
+
+  .home-services,
+  .home-why,
+  .home-testimonials {
+    padding: 4rem 2rem;
+  }
+}
+
+/* =========================================
+   RESPONSIVE — MOBILE
+   ========================================= */
+@media (max-width: 768px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+    min-height: auto;
+    text-align: left;
+  }
+
+  .home-hero-image-wrapper {
+    order: -1;
+  }
+
+  .home-hero-heading {
+    font-size: 2.1rem;
+  }
+
+  .home-hero-text {
+    max-width: 100%;
+  }
+
+  .home-hero-buttons {
+    width: 100%;
+  }
+
+  .home-hero-btn-primary,
+  .home-hero-btn-secondary {
+    text-align: center;
+    flex: 1;
+  }
+
+  .home-intro {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .home-services,
+  .home-why,
+  .home-testimonials {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .home-section-heading {
+    font-size: 1.8rem;
+  }
+
+  .home-final-cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .home-final-cta-heading {
+    font-size: 1.7rem;
+  }
+}
