@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import "./Contact.css";
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
   return (
@@ -49,6 +50,7 @@ function Contact() {
           will get back to you to confirm your appointment.
         </p>
 
+        <ContactForm />
       </section>
 
       {/* 4. Visit Us */}
