@@ -1,7 +1,7 @@
 // src/pages/Services.jsx
 
 import { Link } from "react-router-dom";
-import ServiceCard from "../components/servicecard";
+import ServiceCard from "../components/ServiceCard";
 import "./Services.css";
 
 function Services() {

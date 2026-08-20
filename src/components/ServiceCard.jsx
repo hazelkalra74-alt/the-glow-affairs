@@ -1,4 +1,4 @@
-// src/components/servicecard.jsx
+// src/components/ServiceCard.jsx
 
 import { Link } from "react-router-dom";
 
