@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 
 import { Link } from "react-router-dom";
-import ServiceCard from "../components/ServiceCard";
+import ServiceCard from "../components/servicecard";
 import heroImage from "../assets/hero.png";
 import "./Home.css";
 
