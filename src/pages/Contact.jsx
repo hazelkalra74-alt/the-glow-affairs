@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 import "./Contact.css";
-import ContactForm from "../components/ContactForm";
+import ContactForm from "../components/Contactform";
 
 function Contact() {
   return (
